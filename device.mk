@@ -89,6 +89,10 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0
+
 # Init
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc \
