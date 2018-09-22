@@ -131,7 +131,12 @@ void vendor_load_properties() {
     property_override("ro.build.fingerprint", fp);
     property_override("ro.bootimage.build.fingerprint", fp);
     property_override("ro.system_ext.build.fingerprint", fp);
-    property_override("ro.build.description", "surya_global-user 10 QKQ1.200512.002 V12.0.2.0.QJGMIXM release-keys");
+    property_override("ro.build.description", "surya_global-user 10 QKQ1.200512.002 V12.0.3.0.QJGMIXM release-keys");
+    property_override("ro.com.google.clientidbase", "android-xiaomi");
+    property_override("ro.com.google.clientidbase.ax", "android-xiaomi-rvo3");
+    property_override("ro.com.google.clientidbase.ms", "android-xiaomi-rvo3");
+    property_override("ro.com.google.clientidbase.tx", "android-xiaomi-rvo3");
+    property_override("ro.com.google.clientidbase.vs", "android-xiaomi-rvo3");
 
     property_override("ro.control_privapp_permissions", "log");
 
