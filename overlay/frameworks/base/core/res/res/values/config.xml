@@ -60,4 +60,10 @@
          for higher refresh rates to be automatically used out of the box -->
     <integer name="config_defaultPeakRefreshRate">120</integer>
 
+   <!-- Do the battery/notification LEDs support pulsing?
+         Used to decide if we show pulse settings -->
+   <bool name="config_ledCanPulse">true</bool>
+
+   <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+   <bool name="config_intrusiveBatteryLed">true</bool>
 </resources>
