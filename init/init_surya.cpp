@@ -110,4 +110,7 @@ void vendor_load_properties() {
                 "karna_in-user 10 QKQ1.200512.002 V12.0.5.0.QJGINXM release-keys",
                 "POCO", "karna", "M2007J20CI");
     }
+
+    //Safetynet workarounds
+    property_override("ro.oem_unlock_supported", "0");
 }
