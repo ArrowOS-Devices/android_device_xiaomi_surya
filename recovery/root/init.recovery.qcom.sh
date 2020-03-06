@@ -8,3 +8,4 @@ sleep 5
 # (vendor and system should be more than enough)
 ln -sf /dev/block/mapper/system /dev/block/bootdevice/by-name/system
 ln -sf /dev/block/mapper/vendor /dev/block/bootdevice/by-name/vendor
+
