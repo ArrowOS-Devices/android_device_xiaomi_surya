@@ -144,12 +144,14 @@ void vendor_load_properties() {
                 fp_desc,
                 "POCO", "surya", "M2007J20CG");
         property_override(nfc_prop, "1");
+        property_override("ro.product.mod_device", "surya_global");
     } else if (hwname == "karna") {
         set_device_props(
                 fp,
                 fp_desc,
                 "POCO", "karna", "M2007J20CI");
         property_override(nfc_prop, "0");
+        property_override("ro.product.mod_device", "surya_in_global");
     }
 
     check_device();
