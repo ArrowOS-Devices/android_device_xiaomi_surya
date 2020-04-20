@@ -8,6 +8,10 @@
 PRODUCT_PRODUCT_PROPERTIES += \
     vendor.camera.aux.packagelist=org.lineageos.snap,net.sourceforge.opencamera,org.codeaurora.snapcam
 
+# Camera
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
+
 # Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=22,22 \
