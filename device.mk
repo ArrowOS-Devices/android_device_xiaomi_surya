@@ -79,7 +79,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mi_thermald.rc
+    init.mi_thermald.rc \
+    init.recovery.qcom.rc
 
 # Keylayout
 PRODUCT_COPY_FILES += \
