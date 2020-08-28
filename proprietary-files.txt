@@ -57,5 +57,6 @@ product/framework/qcrilhook.jar
 product/framework/QtiTelephonyServicelibrary.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
-# Telephony (qti-telephony-common) - from LA.UM.8.9.r1-08300-SM6xx.0
-product/framework/qti-telephony-common.jar|411e1eda313b38205dd89a012d898f74e2ddaee0
+# Telephony (qti-telephony-common)
+# Smali edited: Removed `miui.os.Build` dependency in `WifiManagerCompatible.isNeeded()`
+product/framework/qti-telephony-common.jar|d53c26a3df5ae5d3218caca05a89dcbaa9a1810f
