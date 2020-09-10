@@ -71,6 +71,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder \
+
 # Init
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc
