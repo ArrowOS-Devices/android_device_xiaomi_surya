@@ -22,3 +22,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Enable inband ringing
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.bluetooth.disableinbandringing=false
+
+# Enable blurs
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1
