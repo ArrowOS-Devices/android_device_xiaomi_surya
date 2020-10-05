@@ -4,13 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 # ADB
-ifeq ($(TARGET_BUILD_VARIANT),eng)
-# /vendor/default.prop is force-setting ro.adb.secure=1
-# Get rid of that by overriding it in /product on eng builds
+# Get rid of that by overriding it in /product
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.secure=0 \
-    ro.adb.secure=0
-endif
+    ro.adb.secure=0 \
+    ro.control_privapp_permissions=log
 
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \

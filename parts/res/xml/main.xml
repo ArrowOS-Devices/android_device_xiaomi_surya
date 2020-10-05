@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2014-2016 The OmniROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="device_specific"
+        android:title="@string/device_specific_settings_title" >
+        <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="org.lineageos.settings"
+             android:targetClass="org.lineageos.settings.DevicePreferenceActivity"/>
+    </Preference>
+
+    <Preference
+        android:key="device_dirac"
+        android:title="@string/dirac_title" >
+        <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="org.lineageos.settings"
+             android:targetClass="org.lineageos.settings.dirac.DiracActivity"/>
+    </Preference>
+
+    <Preference
+        android:key="device_thermal"
+        android:title="@string/thermal_title" >
+        <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="org.lineageos.settings"
+             android:targetClass="org.lineageos.settings.thermal.ThermalActivity"/>
+    </Preference>
+
+    <Preference
+        android:key="device_doze"
+        android:title="@string/ambient_display_title" >
+        <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="org.lineageos.settings"
+             android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"/>
+    </Preference>
+</PreferenceScreen>
