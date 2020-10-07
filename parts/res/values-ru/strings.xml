@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <!-- Device specific settings -->
+    <string name="device_settings_app_name">Дополнительные настройки</string>
+    <string name="advanced_settings">Настройки устройства</string>
+
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <string name="switch_bar_on">Включено</string>
+
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <string name="switch_bar_off">Выключено</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display_title">Индикация событий</string>
+    <string name="ambient_display_enable_title">Индикация событий</string>
+    <string name="ambient_display_enable_summary">Включать экран при получении уведомлений</string>
+    <string name="ambient_display_gestures_title">Жесты Ambient Display</string>
+    <string name="ambient_display_gestures_summary">Дополнительные жесты для пробуждения экрана</string>
+    <string name="ambient_display_summary">Включать экран при получении уведомлений</string>
+    <string name="ambient_display_summary_on">Включать экран при получении уведомлений</string>
+    <string name="ambient_display_summary_off">Не включать экран при получении уведомлений</string>
+    <string name="ambient_display_always_on_title">Всегда включен</string>
+    <string name="ambient_display_always_on_summary">Показывать время, значки уведомлений и другую информацию. Увеличивает расход батареи.</string>
+
+    <!-- Pickup sensor -->
+    <string name="pickup_sensor_title">Датчик движения</string>
+
+    <!-- Proximity sensor -->
+    <string name="proximity_sensor_title">Датчик приближения</string>
+
+    <!-- Hand wave gesture -->
+    <string name="hand_wave_gesture_title">Взмах рукой</string>
+    <string name="hand_wave_gesture_summary">Проведите ладонью над экраном для просмотра уведомлений</string>
+    <string name="hand_wave_gesture_flat_title">Учитывать положение устройства</string>
+    <string name="hand_wave_gesture_flat_summary">Показывать уведомления только тогда, когда телефон лежит на плоской поверхности экраном вверх</string>
+
+    <!-- Pick-up gesture -->
+    <string name="pick_up_gesture_title">Поднять</string>
+    <string name="pick_up_gesture_summary">Отображать уведомления при поднятии устройства</string>
+
+    <!-- Pocket gesture -->
+    <string name="pocket_gesture_title">Карман</string>
+    <string name="pocket_gesture_summary">Отображать уведомления при извлечении устройства из кармана</string>
+    <string name="proximity_wake_title">Включение по датчикам</string>
+    <string name="proximity_wake_enable_title">Включение по датчикам</string>
+    <string name="proximity_wake_enable_summary">Проведите ладонью над экраном, чтобы вывести устройство из режима сна</string>
+
+    <!-- Dialog texts -->
+    <string name="dialog_ok">OK</string>
+
+    <!-- Help texts -->
+    <string name="doze_settings_help_title">Информация</string>
+    <string name="doze_settings_help_text">Эти функции используют события датчиков для отображения уведомлений. Датчик проверяется только при поступлении нового уведомления, что помогает сэкономить заряд батареи. Можно активировать включение датчика сразу при отключении экрана устройства, однако это может ускорить разряд батареи.</string>
+
+    <!-- POCO X3 specific settings -->
+    <string name="device_specific_settings_title">Настройки устройства</string>
+    <string name="device_min_refresh_rate">Минимальная частота</string>
+    <string name="device_pill_style_notch">Каплевидный вырез</string>
+    <string name="msg_device_need_restart">Изменения применятся после перезагрузки.</string>
+
+    <!-- Dirac settings -->
+    <string name="dirac_title">Улучшение звука Mi</string>
+    <string name="dirac_headset_title">Тип наушников</string>
+    <string name="dirac_hifi_enable_title">Включить Hi-fi</string>
+    <string name="dirac_preset_title">Выберите настройку</string>
+
+    <string name="dirac_hifi_title">Звук Hi-Fi</string>
+    <string name="dirac_hifi_summary">Уменьшить шумы и искажения для улучшения качества звука</string>
+
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_default">По умолчанию</string>
+    <string name="dirac_headset_earbuds">Mi Earbuds</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston-1</string>
+    <string name="dirac_headset_general">Обычные наушники</string>
+    <string name="dirac_headset_general_inear">Вакуумные</string>
+    <string name="dirac_headset_piston_basic">Mi Piston Basic</string>
+    <string name="dirac_headset_piston_2">Mi Piston-2</string>
+    <string name="dirac_headset_piston_standard">Mi Piston Standard</string>
+    <string name="dirac_headset_headphone">Mi Headphones</string>
+    <string name="dirac_headset_piston_youth">Mi Piston Youth</string>
+    <string name="dirac_headset_piston_color">Mi Piston Colorful</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear Pro</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro HD</string>
+    <string name="dirac_headset_comfort">Mi Comfort</string>
+    <string name="dirac_headset_reduction_noise">Mi ANC Type-C</string>
+    <string name="dirac_headset_cancelling">Mi ANC 3.5 мм</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
+    <string name="dirac_headset_earphone">Mi Earphones</string>
+
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">По умолчанию</string>
+    <string name="dirac_preset_rock">Рок</string>
+    <string name="dirac_preset_jazz">Джаз</string>
+    <string name="dirac_preset_pop">Поп</string>
+    <string name="dirac_preset_classical">Классика</string>
+    <string name="dirac_preset_hiphop">Хип-Хоп</string>
+    <string name="dirac_preset_blues">Блюз</string>
+    <string name="dirac_preset_electronic">Электронная</string>
+    <string name="dirac_preset_country">Кантри</string>
+    <string name="dirac_preset_dance">Танцевальная</string>
+    <string name="dirac_preset_metal">Металл</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Настройки производительности</string>
+    <string name="thermal_summary">Выберите профиль производительности</string>
+    <string name="thermal_default">по умолчанию</string>
+    <string name="thermal_benchmark">тест</string>
+    <string name="thermal_camera">камера</string>
+    <string name="thermal_dialer">телефон</string>
+    <string name="thermal_gaming">игра</string>
+</resources>

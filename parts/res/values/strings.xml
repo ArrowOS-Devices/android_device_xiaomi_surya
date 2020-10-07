@@ -15,7 +15,7 @@
 
     <!-- Device specific settings -->
     <string name="device_settings_app_name">Advanced settings</string>
-    <string name="advanced_settings">Advanced</string>
+    <string name="advanced_settings">Device features</string>
 
     <!-- Label for feature switch [CHAR LIMIT=30] -->
     <string name="switch_bar_on">On</string>
