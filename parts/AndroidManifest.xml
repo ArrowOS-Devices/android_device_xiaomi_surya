@@ -17,6 +17,7 @@
     <application
         android:allowBackup="true"
         android:label="@string/device_settings_app_name"
+        android:theme="@style/Theme.Main"
         android:persistent="true">
 
         <receiver android:name=".BootCompletedReceiver">
@@ -29,8 +30,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/advanced_settings"
-            android:theme="@style/Theme.Main">
+            android:label="@string/advanced_settings">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
@@ -40,8 +41,7 @@
 
         <activity
             android:name=".DevicePreferenceActivity"
-            android:label="@string/device_specific_settings_title"
-            android:theme="@style/Theme.Main">
+            android:label="@string/device_specific_settings_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -50,8 +50,7 @@
 
         <activity
             android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.Main">
+            android:label="@string/ambient_display_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -64,8 +63,7 @@
 
         <activity
             android:name=".dirac.DiracActivity"
-            android:label="@string/dirac_title"
-            android:theme="@style/Theme.Main">
+            android:label="@string/dirac_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -74,8 +72,7 @@
 
         <activity
             android:name=".thermal.ThermalActivity"
-            android:label="@string/thermal_title"
-            android:theme="@style/Theme.Main">
+            android:label="@string/thermal_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -92,4 +89,3 @@
 
     </application>
 </manifest>
-

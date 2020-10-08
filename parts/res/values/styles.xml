@@ -18,7 +18,6 @@
         <item name="preferenceCategoryStyle">@style/Theme.Main.PreferenceCategoryStyle</item>
         <item name="preferenceFragmentStyle">@style/Theme.Main.PreferenceFragmentStyle</item>
         <item name="preferenceStyle">@style/Theme.Main.PreferenceStyle</item>
-        <item name="preferenceTheme">@style/Theme.Main.PreferenceTheme</item>
         <item name="switchPreferenceStyle">@style/Theme.Main.SwitchPreferenceStyle</item>
     </style>
 
@@ -26,8 +25,8 @@
     </style>
 
     <style name="Theme.Main.PreferenceCategoryStyle" parent="@*android:style/Preference.DeviceDefault.Category">
-        <item name="allowDividerAbove">true</item>
-        <item name="allowDividerBelow">true</item>
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
         <item name="android:layout">@layout/preference_category_material_settings</item>
     </style>
 
@@ -37,12 +36,9 @@
 
     <style name="Theme.Main.PreferenceStyle" parent="@*android:style/Preference.DeviceDefault">
         <item name="allowDividerAbove">false</item>
-        <item name="allowDividerBelow">true</item>
+        <item name="allowDividerBelow">false</item>
         <item name="singleLineTitle">false</item>
         <item name="android:layout">@layout/preference_material_settings</item>
-    </style>
-
-    <style name="Theme.Main.PreferenceTheme">
     </style>
 
     <style name="Theme.Main.SwitchPreferenceStyle" parent="@style/Theme.Main.PreferenceStyle">
