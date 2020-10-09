@@ -17,13 +17,15 @@ LOCAL_REQUIRED_MODULES := \
     android.hardware.light@2.0-service.surya.rc
 
 LOCAL_SHARED_LIBRARIES := \
-    libbase \
     libhardware \
     libhidlbase \
     liblog \
     libhwbinder \
-    libutils \
     android.hardware.light@2.0
+
+LOCAL_STATIC_LIBRARIES := \
+    libbase \
+    libutils
 
 include $(BUILD_EXECUTABLE)
 
