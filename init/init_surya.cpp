@@ -97,20 +97,22 @@ void set_device_props(const std::string fingerprint, const std::string descripti
 
 void vendor_load_properties() {
     std::string hwname = GetProperty("ro.boot.hwname", "");
-    char const fp[] = "google/sunfish/sunfish:11/RP1A.201105.002/6869500:user/release-keys";
+    char const fp[] = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
+    char const fp_desc[] = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
 
     if (hwname == "surya") {
         set_device_props(
                 fp,
-                "surya_global-user 10 QKQ1.200512.002 V12.0.3.0.QJGMIXM release-keys",
+                fp_desc,
                 "POCO", "surya", "M2007J20CG");
     } else if (hwname == "karna") {
         set_device_props(
                 fp,
-                "karna_in-user 10 QKQ1.200512.002 V12.0.5.0.QJGINXM release-keys",
+                fp_desc,
                 "POCO", "karna", "M2007J20CI");
     }
 
     //Safetynet workarounds
     property_override("ro.oem_unlock_supported", "0");
+    property_override("ro.boot.verifiedbootstate", "green");
 }
