@@ -20,7 +20,6 @@ LOCAL_SHARED_LIBRARIES := \
     libbase \
     libhardware \
     libhidlbase \
-    libhidltransport \
     liblog \
     libhwbinder \
     libutils \
