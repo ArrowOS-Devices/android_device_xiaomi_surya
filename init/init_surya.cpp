@@ -129,7 +129,10 @@ void vendor_load_properties() {
     }
     property_override("ro.build.fingerprint", "google/sunfish/sunfish:11/RP1A.200720.011/6746289:user/release-keys");
     property_override("ro.bootimage.build.fingerprint", "google/sunfish/sunfish:11/RP1A.200720.011/6746289:user/release-keys");
+    property_override("ro.system_ext.build.fingerprint", "google/sunfish/sunfish:11/RP1A.200720.011/6746289:user/release-keys");
     property_override("ro.build.description", "surya_global-user 10 QKQ1.200512.002 V12.0.2.0.QJGMIXM release-keys");
+
+    property_override("ro.control_privapp_permissions", "log");
 
     // Workaround SafetyNet
     workaround_snet_properties();
