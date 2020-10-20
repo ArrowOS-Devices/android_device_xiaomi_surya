@@ -68,7 +68,7 @@
     <!-- POCO X3 specific settings -->
     <string name="device_specific_settings_title">Настройки устройства</string>
     <string name="device_min_refresh_rate">Минимальная частота</string>
-    <string name="device_pill_style_notch">Каплевидный вырез</string>
+    <string name="device_pill_style_notch">Использовать вырез под камеру</string>
     <string name="msg_device_need_restart">Изменения применятся после перезагрузки.</string>
 
     <!-- Dirac settings -->
