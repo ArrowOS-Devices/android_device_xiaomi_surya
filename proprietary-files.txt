@@ -25,6 +25,14 @@ product/lib64/libdpmframework.so
 product/lib64/libdpmtcm.so
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk
 
+# FM
+lib64/fm_helium.so
+lib64/libfm-hci.so
+lib/fm_helium.so
+lib/libfm-hci.so
+product/lib64/vendor.qti.hardware.fm@1.0.so
+product/lib/vendor.qti.hardware.fm@1.0.so
+
 # IMS
 -product/priv-app/ims/ims.apk|600c6d03c03f88f35c51ba8e6b1a4cb7d70b94e6
 product/lib64/libdiag_system.so
