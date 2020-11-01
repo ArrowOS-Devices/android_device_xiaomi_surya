@@ -99,17 +99,20 @@ void vendor_load_properties() {
     std::string hwname = GetProperty("ro.boot.hwname", "");
     char const fp[] = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
     char const fp_desc[] = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
+    char nfc_prop[] = "ro.hw.nfc";
 
     if (hwname == "surya") {
         set_device_props(
                 fp,
                 fp_desc,
                 "POCO", "surya", "M2007J20CG");
+        property_override(nfc_prop, "1");
     } else if (hwname == "karna") {
         set_device_props(
                 fp,
                 fp_desc,
                 "POCO", "karna", "M2007J20CI");
+        property_override(nfc_prop, "0");
     }
 
     //Safetynet workarounds
