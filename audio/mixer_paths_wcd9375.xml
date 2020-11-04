@@ -2855,7 +2855,7 @@
 
     <path name="handset">
         <ctl name="TERT_MI2S_RX Channels" value="One" />
-	<ctl name="TAS256X PLAYBACK VOLUME LEFT" value="45" />
+	<ctl name="TAS256X PLAYBACK VOLUME LEFT" value="48" />
         <ctl name="TAS256X RX MODE LEFT" value="Receiver" />
 	<ctl name="TAS256X ASI1 SEL LEFT" value="Left" />
 	<ctl name="TAS256X ASI Left Switch" value="1" />
