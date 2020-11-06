@@ -18,3 +18,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Disable smart fps switching
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.smart_dfps.enable=false
+
+# Enable inband ringing
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.bluetooth.disableinbandringing=false
