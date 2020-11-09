@@ -13,58 +13,6 @@
 -->
 <resources>
 
-    <!-- Device specific settings -->
-    <string name="device_settings_app_name">Дополнительные настройки</string>
-    <string name="advanced_settings">Настройки устройства</string>
-
-    <!-- Label for feature switch [CHAR LIMIT=30] -->
-    <string name="switch_bar_on">Включено</string>
-
-    <!-- Label for feature switch [CHAR LIMIT=30] -->
-    <string name="switch_bar_off">Выключено</string>
-
-    <!-- Ambient Display -->
-    <string name="ambient_display_title">Индикация событий</string>
-    <string name="ambient_display_enable_title">Индикация событий</string>
-    <string name="ambient_display_enable_summary">Включать экран при получении уведомлений</string>
-    <string name="ambient_display_gestures_title">Жесты Ambient Display</string>
-    <string name="ambient_display_gestures_summary">Дополнительные жесты для пробуждения экрана</string>
-    <string name="ambient_display_summary">Включать экран при получении уведомлений</string>
-    <string name="ambient_display_summary_on">Включать экран при получении уведомлений</string>
-    <string name="ambient_display_summary_off">Не включать экран при получении уведомлений</string>
-    <string name="ambient_display_always_on_title">Всегда включен</string>
-    <string name="ambient_display_always_on_summary">Показывать время, значки уведомлений и другую информацию. Увеличивает расход батареи.</string>
-
-    <!-- Pickup sensor -->
-    <string name="pickup_sensor_title">Датчик движения</string>
-
-    <!-- Proximity sensor -->
-    <string name="proximity_sensor_title">Датчик приближения</string>
-
-    <!-- Hand wave gesture -->
-    <string name="hand_wave_gesture_title">Взмах рукой</string>
-    <string name="hand_wave_gesture_summary">Проведите ладонью над экраном для просмотра уведомлений</string>
-    <string name="hand_wave_gesture_flat_title">Учитывать положение устройства</string>
-    <string name="hand_wave_gesture_flat_summary">Показывать уведомления только тогда, когда телефон лежит на плоской поверхности экраном вверх</string>
-
-    <!-- Pick-up gesture -->
-    <string name="pick_up_gesture_title">Поднять</string>
-    <string name="pick_up_gesture_summary">Отображать уведомления при поднятии устройства</string>
-
-    <!-- Pocket gesture -->
-    <string name="pocket_gesture_title">Карман</string>
-    <string name="pocket_gesture_summary">Отображать уведомления при извлечении устройства из кармана</string>
-    <string name="proximity_wake_title">Включение по датчикам</string>
-    <string name="proximity_wake_enable_title">Включение по датчикам</string>
-    <string name="proximity_wake_enable_summary">Проведите ладонью над экраном, чтобы вывести устройство из режима сна</string>
-
-    <!-- Dialog texts -->
-    <string name="dialog_ok">OK</string>
-
-    <!-- Help texts -->
-    <string name="doze_settings_help_title">Информация</string>
-    <string name="doze_settings_help_text">Эти функции используют события датчиков для отображения уведомлений. Датчик проверяется только при поступлении нового уведомления, что помогает сэкономить заряд батареи. Можно активировать включение датчика сразу при отключении экрана устройства, однако это может ускорить разряд батареи.</string>
-
     <!-- POCO X3 specific settings -->
     <string name="device_specific_settings_title">Настройки устройства</string>
     <string name="device_min_refresh_rate">Минимальная частота</string>
