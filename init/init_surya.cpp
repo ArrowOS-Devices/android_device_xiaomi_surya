@@ -105,7 +105,8 @@ static void workaround_snet_properties() {
     chmod("/sys/fs/selinux/policy", 0440);
 }
 
-void vendor_load_properties() {
+void set_device_props(const std::string fingerprint, const std::string description,
+        const std::string brand, const std::string device, const std::string model) {
     const auto set_ro_build_prop = [](const std::string &source,
                                       const std::string &prop,
                                       const std::string &value) {
@@ -120,18 +121,17 @@ void vendor_load_properties() {
         property_override(prop_name.c_str(), value.c_str(), false);
     };
 
-    char const fp[] = "google/sunfish/sunfish:11/RP1A.201105.002/6869500:user/release-keys";
-
     for (const auto &source : ro_props_default_source_order) {
-        set_ro_build_prop(source, "fingerprint", fp);
-        set_ro_product_prop(source, "brand", "POCO");
-        set_ro_product_prop(source, "device", "surya");
-        set_ro_product_prop(source, "model", "M2007J20CG");
+        set_ro_build_prop(source, "fingerprint", fingerprint);
+        set_ro_product_prop(source, "brand", brand);
+        set_ro_product_prop(source, "device", device);
+        set_ro_product_prop(source, "model", model);
     }
-    property_override("ro.build.fingerprint", fp);
-    property_override("ro.bootimage.build.fingerprint", fp);
-    property_override("ro.system_ext.build.fingerprint", fp);
-    property_override("ro.build.description", "surya_global-user 10 QKQ1.200512.002 V12.0.3.0.QJGMIXM release-keys");
+
+    property_override("ro.build.fingerprint", fingerprint.c_str());
+    property_override("ro.build.description", description.c_str());
+    property_override("ro.bootimage.build.fingerprint", fingerprint.c_str());
+    property_override("ro.system_ext.build.fingerprint", fingerprint.c_str());
     property_override("ro.com.google.clientidbase", "android-xiaomi");
     property_override("ro.com.google.clientidbase.ax", "android-xiaomi-rvo3");
     property_override("ro.com.google.clientidbase.ms", "android-xiaomi-rvo3");
@@ -139,6 +139,23 @@ void vendor_load_properties() {
     property_override("ro.com.google.clientidbase.vs", "android-xiaomi-rvo3");
 
     property_override("ro.control_privapp_permissions", "log");
+}
+
+void vendor_load_properties() {
+    std::string hwname = GetProperty("ro.boot.hwname", "");
+    char const fp[] = "google/sunfish/sunfish:11/RP1A.201105.002/6869500:user/release-keys";
+
+    if (hwname == "surya") {
+        set_device_props(
+                fp,
+                "surya_global-user 10 QKQ1.200512.002 V12.0.3.0.QJGMIXM release-keys",
+                "POCO", "surya", "M2007J20CG");
+    } else if (hwname == "karna") {
+        set_device_props(
+                fp,
+                "karna_in-user 10 QKQ1.200512.002 V12.0.5.0.QJGINXM release-keys",
+                "POCO", "karna", "M2007J20CI");
+    }
 
     // Workaround SafetyNet
     workaround_snet_properties();
