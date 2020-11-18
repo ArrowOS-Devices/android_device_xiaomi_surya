@@ -655,4 +655,8 @@
     <bool name="config_proximityCheckOnWake">true</bool>
     <integer name="config_proximityCheckTimeout">3000</integer>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">false</bool>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">24.0dip</dimen>
+    <dimen name="status_bar_height_landscape">24.0dip</dimen>
 </resources>
