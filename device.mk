@@ -142,6 +142,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vendor-overlay/etc/init.qcom.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.qcom.rc
 
+# Releasetool scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/device_nfc_check.sh:install/bin/device_nfc_check.sh
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
