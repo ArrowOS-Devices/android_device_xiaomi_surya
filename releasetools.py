@@ -30,9 +30,9 @@ def FullOTA_InstallEnd(info):
 
   # device checks
   info.script.Print("Performing device checks for NFC...")
-  DeviceChecks(info, "device_nfc_check.sh", "")
+  DeviceChecks(info, "device_nfc_check.sh", "system", "ext4")
   return
 
-def DeviceChecks(info, name, arg):
-  info.script.AppendExtra(('run_program("/tmp/install/bin/%s", "%s");' % (name, arg)))
+def DeviceChecks(info, name, partition, fs_type):
+  info.script.AppendExtra(('run_program("/tmp/install/bin/%s", map_partition("%s"), "%s");' % (name, partition, fs_type)))
   return

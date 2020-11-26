@@ -16,19 +16,45 @@
 #
 
 DEVICE=`getprop ro.boot.hwname`
+SYSDEV="$(readlink -nf "$1")"
+SYSFS="$2"
 
-# mount system as r/w
-mount -t ext4 /dev/block/platform/soc/1d84000.ufshc/by-name/system /system_root -o rw,discard
+determine_system_mount() {
+  if grep -q -e"^$SYSDEV" /proc/mounts; then
+    umount $(grep -e"^$SYSDEV" /proc/mounts | cut -d" " -f2)
+  fi
+
+  if [ -d /mnt/system ]; then
+    SYSMOUNT="/mnt/system"
+  elif [ -d /system_root ]; then
+    SYSMOUNT="/system_root"
+  else
+    SYSMOUNT="/system"
+  fi
+
+  export S=$SYSMOUNT/system
+}
+
+mount_system() {
+  mount -t $SYSFS $SYSDEV $SYSMOUNT -o rw,discard
+}
+
+unmount_system() {
+  umount $SYSMOUNT
+}
+
+determine_system_mount
 
 if [ $DEVICE == "karna" ]; then
+    mount_system
     # Nuke NFC
-    rm -rf /system_root/system/app/*Nfc*
-    rm -rf /system_root/system/etc/permissions/*nfc*
-    rm -rf /system_root/system/framework/*nfc*
-    rm -rf /system_root/system/lib/*nfc*
-    rm -rf /system_root/system/lib64/*nfc*
-    rm -rf /system_root/system/priv-app/Tag
+    rm -rf $S/app/*Nfc*
+    rm -rf $S/etc/permissions/*nfc*
+    rm -rf $S/framework/*nfc*
+    rm -rf $S/lib/*nfc*
+    rm -rf $S/lib64/*nfc*
+    rm -rf $S/priv-app/Tag
 fi
 
 # unmount system
-umount /system_root
+unmount_system
