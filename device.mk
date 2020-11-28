@@ -65,6 +65,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-parts.xml
 
+# Display/Graphics
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    libqdMetaData.system
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -190,3 +195,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# WFD
+PRODUCT_PACKAGES += \
+    libaacwrapper \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon

@@ -39,3 +39,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio.fluence.voicerec=true \
     persist.vendor.audio.fluence.audiorec=true
+
+# WFD
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.latch_unsignaled=1 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
