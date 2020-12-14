@@ -6,5 +6,9 @@
   {
     "repository": "android_kernel_xiaomi_surya",
     "target_path": "kernel/xiaomi/surya"
+  },
+  {
+    "repository": "android_packages_apps_GCamGOPrebuilt",
+    "target_path": "packages/apps/GCamGOPrebuilt"
   }
 ]
