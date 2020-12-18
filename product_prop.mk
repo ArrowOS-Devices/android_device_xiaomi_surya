@@ -42,7 +42,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.audio.fluence.audiorec=true
 
 # WFD
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sf.enable_hwc_vds=1 \
     debug.sf.latch_unsignaled=1 \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
