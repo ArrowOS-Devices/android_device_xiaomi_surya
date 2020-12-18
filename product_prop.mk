@@ -35,6 +35,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1
 
+# Graphics
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+
 # Recorder
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.audio.sdk.fluencetype=fluence \
