@@ -100,6 +100,12 @@ lib64/libOmxMux.so
 etc/permissions/com.nxp.nfc.xml
 -framework/com.nxp.nfc.jar
 
+# Perf - from surya QKQ1.200512.002-V12.0.4.0.QJGMIXM
+product/lib64/vendor.qti.hardware.iop@2.0.so
+product/lib64/vendor.qti.hardware.perf@2.0.so
+product/lib/vendor.qti.hardware.iop@2.0.so
+product/lib/vendor.qti.hardware.perf@2.0.so
+
 # Postprocessing - from surya QKQ1.200512.002-V12.0.4.0.QJGMIXM
 product/lib/vendor.display.color@1.0.so
 product/lib/vendor.display.color@1.1.so
