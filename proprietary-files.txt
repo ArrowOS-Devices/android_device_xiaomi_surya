@@ -79,6 +79,9 @@ product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 -product/priv-app/ims/ims.apk
 
+# Input - from surya QKQ1.200512.002-V12.0.6.0.QJGMIXM-release-keys
+etc/excluded-input-devices.xml
+
 # Media - from surya QKQ1.200512.002-V12.0.4.0.QJGMIXM
 lib/libFileMux.so
 lib/libmmosal.so
