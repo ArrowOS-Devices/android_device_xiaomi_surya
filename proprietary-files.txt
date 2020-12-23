@@ -116,12 +116,6 @@ bin/charger
 product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|e6c1f1bfb7bd5cfb36131aaff0d4e8c74833865d
 product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|1b16cd00fd2144e860f99c0869c2db1489c789a2
 
-# System
-lib/libqdMetaData.so
-lib/libqdMetaData.system.so
-lib64/libqdMetaData.so
-lib64/libqdMetaData.system.so
-
 # Telephony - from surya QKQ1.200512.002-V12.0.4.0.QJGMIXM
 etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti_libpermissions.xml
