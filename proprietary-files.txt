@@ -8,6 +8,9 @@ product/framework/vendor.qti.hardware.alarm-V1.0-java.jar
 product/lib/com.qualcomm.qti.ant@1.0.so
 product/lib64/com.qualcomm.qti.ant@1.0.so
 
+# Camera
+lib/libcameraservice.so|5f264c00f4e8b5b1af42b53d4d42bf317ab73eed
+
 # DPM - from surya QKQ1.200512.002-V12.0.4.0.QJGMIXM
 framework/tcmclient.jar
 product/bin/dpmd
