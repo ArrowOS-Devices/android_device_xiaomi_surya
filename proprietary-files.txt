@@ -42,6 +42,34 @@ product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 product/lib64/vendor.qti.hardware.data.iwlan@1.0.so
 product/lib64/vendor.qti.hardware.data.qmi@1.0.so
 
+# Display Hardware
+product/lib/vendor.display.config@1.0.so
+product/lib/vendor.display.config@1.1.so
+product/lib/vendor.display.config@1.2.so
+product/lib/vendor.display.config@1.3.so
+product/lib/vendor.display.config@1.4.so
+product/lib/vendor.display.config@1.5.so
+product/lib/vendor.display.config@1.6.so
+product/lib/vendor.display.config@1.7.so
+product/lib/vendor.display.config@1.8.so
+product/lib/vendor.display.config@1.9.so
+product/lib/vendor.display.config@1.10.so
+product/lib/vendor.display.config@1.11.so
+product/lib/vendor.display.config@1.12.so
+product/lib64/vendor.display.config@1.0.so
+product/lib64/vendor.display.config@1.1.so
+product/lib64/vendor.display.config@1.2.so
+product/lib64/vendor.display.config@1.3.so
+product/lib64/vendor.display.config@1.4.so
+product/lib64/vendor.display.config@1.5.so
+product/lib64/vendor.display.config@1.6.so
+product/lib64/vendor.display.config@1.7.so
+product/lib64/vendor.display.config@1.8.so
+product/lib64/vendor.display.config@1.9.so
+product/lib64/vendor.display.config@1.10.so
+product/lib64/vendor.display.config@1.11.so
+product/lib64/vendor.display.config@1.12.so
+
 # DPM
 framework/tcmclient.jar
 product/bin/dpmd
@@ -128,6 +156,12 @@ bin/charger|4b600706d503dce9cf3b41b81f9c9a618a458221
 # Soundfx - from guacamole QKQ1.190716.003
 product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|e6c1f1bfb7bd5cfb36131aaff0d4e8c74833865d
 product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|1b16cd00fd2144e860f99c0869c2db1489c789a2
+
+# System
+lib/libqdMetaData.so
+lib/libqdMetaData.system.so
+lib64/libqdMetaData.so
+lib64/libqdMetaData.system.so
 
 # Telephony
 etc/permissions/privapp-permissions-qti.xml
