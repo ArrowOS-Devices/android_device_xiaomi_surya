@@ -43,7 +43,7 @@
 #include "vendor_init.h"
 
 using android::base::GetProperty;
-using android::base::SetProperty;
+using std::string;
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -153,12 +153,12 @@ void vendor_load_properties() {
     }
 
     check_device();
-    SetProperty("dalvik.vm.heapstartsize", heapstartsize);
-    SetProperty("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
-    SetProperty("dalvik.vm.heapsize", heapsize);
-    SetProperty("dalvik.vm.heaptargetutilization", heaptargetutilization);
-    SetProperty("dalvik.vm.heapminfree", heapminfree);
-    SetProperty("dalvik.vm.heapmaxfree", heapmaxfree);
+    property_override("dalvik.vm.heapstartsize", heapstartsize);
+    property_override("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
+    property_override("dalvik.vm.heapsize", heapsize);
+    property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
+    property_override("dalvik.vm.heapminfree", heapminfree);
+    property_override("dalvik.vm.heapmaxfree", heapmaxfree);
 
     //Safetynet workarounds
     property_override("ro.oem_unlock_supported", "0");
