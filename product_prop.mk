@@ -49,12 +49,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     vendor.display.disable_rotator_downscale=1 \
 
-# Recorder
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.vendor.audio.sdk.fluencetype=fluence \
-    persist.vendor.audio.fluence.voicerec=true \
-    persist.vendor.audio.fluence.audiorec=true
-
 # WFD
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_hwc_vds=1 \
