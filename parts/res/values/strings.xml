@@ -93,6 +93,6 @@
     <string name="touch_resistant_title">Touch-resistant area</string>
     <string name="touch_resistant_summary">Reduce touch sensitivity near the edges to avoid triggering touch controls</string>
 
-    <!-- QS tile title -->
-    <string name="dirac_qs_tile_title">Dirac sound</string>
+     <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Mi Sound Enhancer</string>
 </resources>
