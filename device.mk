@@ -159,6 +159,11 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# Soong namespace
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    kernel/xiaomi/surya
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -186,9 +191,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay
-
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
 
 # WFD
 PRODUCT_PACKAGES += \
