@@ -14,14 +14,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/surya/surya-vendor.mk)
 
-# Include PSU if synced
-$(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
-
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
--include $(LOCAL_PATH)/system_prop.mk
--include $(LOCAL_PATH)/product_prop.mk
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 BOARD_BUILD_PRODUCT_IMAGE := true
@@ -65,15 +59,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-parts.xml
 
-# Display/Graphics
-PRODUCT_PACKAGES += \
-    libdisplayconfig \
-    libqdMetaData \
-    libqdMetaData.system
-
-PRODUCT_COPY_FILES += \
-     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.vulkan.deqp.level.xml
-
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -94,10 +79,6 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0
-
 # Init
 PRODUCT_PACKAGES += \
     init.device.rc
@@ -115,7 +96,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.surya
+    android.hardware.light@2.0-service.xiaomi_surya
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -149,15 +130,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service.surya
 
-# Releasetool scripts
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/bin/device_nfc_check.sh:install/bin/device_nfc_check.sh
+# Properties
+-include $(LOCAL_PATH)/system_prop.mk
+-include $(LOCAL_PATH)/product_prop.mk
 
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
+
+# Releasetool scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/device_nfc_check.sh:install/bin/device_nfc_check.sh
 
 # Soong namespace
 PRODUCT_SOONG_NAMESPACES += \
@@ -182,6 +167,10 @@ PRODUCT_BOOT_JARS += \
 # Vendor overlay
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor-overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION))
+
+# Vulkan
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.vulkan.deqp.level.xml
 
 # VNDK
 PRODUCT_COPY_FILES += \
