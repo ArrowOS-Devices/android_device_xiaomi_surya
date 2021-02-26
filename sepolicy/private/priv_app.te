@@ -1,0 +1,10 @@
+allow priv_app vendor_default_prop:file read;
+allow priv_app bt_firmware_file:filesystem getattr;
+allow priv_app firmware_file:filesystem getattr;
+allow priv_app mnt_product_file:dir search;
+allow priv_app vendor_default_prop:file { getattr open map };
+allow priv_app adbd_prop:file { getattr open map };
+allow priv_app apexd_prop:file { getattr open map };
+
+binder_call(priv_app, hal_displayfeature_xiaomi_default)
+binder_call(priv_app, hal_misys_default)

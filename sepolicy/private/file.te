@@ -11,11 +11,13 @@ type persist_file, file_type;
 type pps_socket, file_type;
 
 #sysfs
+type sysfs_graphics, sysfs_type, fs_type;
+type sysfs_usb_supply, sysfs_type, fs_type;
 type sysfs_battery_supply, sysfs_type, fs_type;
 type sysfs_ledcit, sysfs_type, fs_type;
+
+type proc_touchpanel, fs_type;
+
 type qr_code_file, fs_type;
-type sysfs_graphics, sysfs_type, fs_type;
-type sysfs_tp_fodstatus, sysfs_type, fs_type;
-type sysfs_kgsl, sysfs_type, fs_type;
 
 type vendor_firmware_file, vendor_file_type, file_type;
