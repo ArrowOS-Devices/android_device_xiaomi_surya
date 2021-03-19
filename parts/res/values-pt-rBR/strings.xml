@@ -15,13 +15,16 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
     <!-- POCO X3 specific settings -->
     <string name="device_specific_settings_title">Ajustes específicos do dispositivo</string>
-    <string name="device_specific_settings_summary">Configuração da taxa de recorte e atualização</string>
+    <string name="device_specific_settings_summary">Ajustes da taxa de atualização</string>
+    <string name="device_refresh_rate">TAXA DE ATUALIZAÇÃO DA TELA</string>
     <string name="device_min_refresh_rate">Taxa mínima de atualização</string>
-    <string name="device_hide_camera_cutout">Ocultar recorte da câmera</string>
-    <string name="msg_device_need_restart">Reinicie o dispositivo para que isso tenha efeito</string>
+    <string name="device_power_save_refresh_rate">Taxa de atualização da economia de bateria</string>
+    <string name="device_power_save_refresh_rate_switch">Diminuir automaticamente a taxa de atualização quando a economia de bateria estiver ativa</string>
+    <string name="msg_device_need_restart">Reinicie o dispositivo para que isso tenha efeito.</string>
+    <string name="refresh_rate_tile_title">Taxa de atualização</string>
+    <string name="refresh_rate_tile_disabled">Economia de bateria ativada</string>
 
     <!-- Dirac settings -->
     <string name="dirac_title">Mi otimizador de áudio</string>
@@ -67,8 +70,8 @@
     <string name="dirac_preset_metal">Metal</string>
 
     <!-- Thermal Profiles -->
-    <string name="thermal_title">Perfis Térmicos</string>
-    <string name="thermal_summary">Ajuste perfis térmicos por aplicativos para um desempenho melhorado</string>
+    <string name="thermal_title">Perfil térmico e modo de jogo</string>
+    <string name="thermal_summary">Ajuste o perfil térmico e o toque de tela por aplicativo para obter o desempenho ideal em jogos</string>
     <string name="thermal_default">Padrão</string>
     <string name="thermal_benchmark">Benchmark / 120 Hz</string>
     <string name="thermal_camera">Câmera</string>
@@ -78,5 +81,19 @@
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Limpar auto-falante</string>
     <string name="clear_speaker_summary">Reproduza um áudio de 30 segundos para limpar o alto-falante</string>
-    <string name="clear_speaker_description">Execute este recurso uma ou duas vezes se descobrir que o alto-falante está ligeiramente bloqueado por poeira</string>
+    <string name="clear_speaker_description">Execute esse recurso uma ou duas vezes se descobrir que o alto-falante está ligeiramente bloqueado por poeira. Defina o volume da mídia para o máximo.</string>
+
+    <!-- Touch Control Settings -->
+    <string name="touch_control_title">Controle de toque</string>
+    <string name="touch_game_mode_title">Habilitar modo de jogo</string>
+    <string name="touch_game_mode_summary">Ative o controle manual do recurso de toque na tela para obter o desempenho ideal em jogos</string>
+    <string name="touch_response_title">Resposta ao toque</string>
+    <string name="touch_response_summary">Controle de resposata ao toque</string>
+    <string name="touch_sensitivity_title">Sensibilidade ao toque</string>
+    <string name="touch_sensitivity_summary">Controle a sensibilidade ao toque para toques sequenciais</string>
+    <string name="touch_resistant_title">Área resistente ao toque</string>
+    <string name="touch_resistant_summary">Reduza a sensibilidade do toque perto das bordas para evitar o acionamento acidental do controle de toque</string>
+
+     <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Mi otimizador de áudio</string>
 </resources>
