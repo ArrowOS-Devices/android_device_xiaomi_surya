@@ -15,6 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+</resources>
     <!-- POCO X3 specific settings -->
     <string name="device_specific_settings_title">Ajustes específicos do dispositivo</string>
     <string name="device_specific_settings_summary">Ajustes da taxa de atualização</string>
