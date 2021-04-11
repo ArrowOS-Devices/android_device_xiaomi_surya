@@ -4,3 +4,6 @@ vendor.camera.sensor.                   u:object_r:vendor_camera_prop:s0
 
 # IR
 ro.lirc.dev                             u:object_r:lirc_prop:s0
+
+# Audio
+tas.smartpa.debug.                      u:object_r:exported2_default_prop:s0
