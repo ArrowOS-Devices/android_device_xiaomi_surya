@@ -49,3 +49,7 @@ PRODUCT_PROPERTY_OVERRIDES += debug.sf.early.sf.duration=21000000
 PRODUCT_PROPERTY_OVERRIDES += debug.sf.early.app.duration=16500000
 PRODUCT_PROPERTY_OVERRIDES += debug.sf.earlyGl.sf.duration=13500000
 PRODUCT_PROPERTY_OVERRIDES += debug.sf.earlyGl.app.duration=21000000
+
+# Block update
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.block_updater=true
