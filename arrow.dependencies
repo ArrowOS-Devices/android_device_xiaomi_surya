@@ -1,6 +1,6 @@
 [
     {
-        "repository":   "device_xiaomi_sm6150-common",
+        "repository":   "android_device_xiaomi_sm6150-common",
         "target_path":  "device/xiaomi/sm6150-common"
     },
     {
@@ -10,7 +10,7 @@
         "branch":       "LA.UM.9.x"
     },
     {
-        "repository":   "vendor_xiaomi_surya",
+        "repository":   "android_vendor_xiaomi_surya",
         "target_path":  "vendor/xiaomi/surya"
     }
 ]
