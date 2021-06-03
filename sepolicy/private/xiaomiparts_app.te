@@ -1,0 +1,26 @@
+type xiaomiparts_app, domain;
+
+app_domain(xiaomiparts_app)
+
+allow xiaomiparts_app {
+    app_api_service
+    activity_service
+    activity_task_service
+    audioserver_service
+    autofill_service
+    gpu_service
+    mediaextractor_service
+    mediametrics_service
+    mediaserver_service
+    surfaceflinger_service
+}:service_manager find;
+
+allow xiaomiparts_app system_app_data_file:dir create_dir_perms;
+allow xiaomiparts_app system_app_data_file:{ file lnk_file } create_file_perms;
+
+allow xiaomiparts_app {
+    cgroup
+    sysfs_thermal
+}:{ file lnk_file } rw_file_perms;
+
+binder_call(xiaomiparts_app, gpuservice)
