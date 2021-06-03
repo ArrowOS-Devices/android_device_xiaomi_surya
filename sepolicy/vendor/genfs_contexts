@@ -1,1 +1,13 @@
 genfscon proc /tp_gesture u:object_r:proc_tp_gesture:s0
+
+# ds28e16 battery verify
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/type                 u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/wakeup11             u:object_r:sysfs_wakeup:s0
+
+# bq2597x charge pump
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0065/power_supply/bq2597x-standalone/type    u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0065/power_supply/bq2597x-standalone/wakeup9 u:object_r:sysfs_wakeup:s0
+
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0065/wakeup                                  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-005a/wakeup                                  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/input/input1/wakeup5                                                 u:object_r:sysfs_wakeup:s0
