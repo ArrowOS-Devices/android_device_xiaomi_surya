@@ -58,4 +58,16 @@
     <string name="dirac_preset_metal">Металл</string>
      <!-- QS tile title -->
     <string name="dirac_qs_tile_title">Dirac звук</string>
+     <!-- Thermal Profiles -->
+    <string name="thermal_title">Настройки производительности</string>
+    <string name="thermal_summary">Выберите профиль производительности</string>
+    <string name="thermal_default">по умолчанию</string>
+    <string name="thermal_benchmark">тест / 120 Гц</string>
+    <string name="thermal_camera">камера</string>
+    <string name="thermal_dialer">телефон / 60 Гц</string>
+    <string name="thermal_gaming">игра / 90 Гц</string>
+     <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Очистка динамика</string>
+    <string name="clear_speaker_summary">Воспроизведение 30-секундного аудиофайла для очистки динамика</string>
+    <string name="clear_speaker_description">Если динамик слегка загрязнен или туда попала вода - установите максимальную громкость мультимедиа и запустите эту функцию 1-2 раза. \n\nЕсли сильно - запустите эту функцию 2–5 раз, встряхивая устройство так, чтобы динамик был направлен вниз.</string>
 </resources>
