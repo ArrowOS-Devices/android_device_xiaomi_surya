@@ -5,6 +5,9 @@ vendor.audio.adm.buffering.ms=2
 vendor.audio.feature.compr_voip.enable=false
 vendor.voice.path.for.pcm.voip=true
 
+# Charger
+ro.charger.enable_suspend=1
+
 # Display
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=200
