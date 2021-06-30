@@ -29,5 +29,8 @@ persist.vendor.cp.fcc_main_ua=400000
 persist.vendor.cp.taper_term_mv=6500
 persist.vendor.cp.vbus_offset_mv=1040
 
+# Keystore
+ro.hardware.keystore_desede=true
+
 # Media
 vendor.media.target.version=2
