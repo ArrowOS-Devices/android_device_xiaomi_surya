@@ -86,8 +86,8 @@ void set_device_fp() {
     string source_partitions[] = { "", "bootimage", "odm.", "product.",
                                    "system", "system_ext.", "vendor." };
 
-    string fp = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
-    string desc = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
+    string fp = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
+    string desc = "walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys";
 
     for (const string &source : source_partitions) {
         set_ro_build_prop(source, "fingerprint", fp, false);
