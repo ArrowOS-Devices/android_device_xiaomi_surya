@@ -7,7 +7,7 @@
         "repository":   "ghostrider-reborn/android_kernel_xiaomi_surya",
         "target_path":  "kernel/xiaomi/surya",
         "remote":       "github",
-        "branch":       "LA.UM.9.x"
+        "branch":       "staging/LA.UM.9.x"
     },
     {
         "repository":   "android_vendor_xiaomi_surya",
