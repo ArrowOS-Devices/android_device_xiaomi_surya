@@ -65,7 +65,8 @@ void set_ro_build_prop(const string &source, const string &prop,
 }
 
 void set_device_props(const string brand, const string device,
-			const string model, const string name) {
+			const string model, const string name,
+                        const string marketname) {
     // list of partitions to override props
     string source_partitions[] = { "", "bootimage", "odm.", "product.",
                                    "system", "system_ext.", "vendor." };
@@ -76,6 +77,7 @@ void set_device_props(const string brand, const string device,
         set_ro_build_prop(source, "product", device, false);
         set_ro_build_prop(source, "model", model, true);
         set_ro_build_prop(source, "name", name, true);
+        set_ro_build_prop(source, "marketname", marketname);
     }
 }
 
@@ -100,10 +102,10 @@ void vendor_load_properties()
      */
 
     if (GetProperty("ro.boot.hwname", "") == "karna") { // POCO X3 (India)
-        set_device_props("POCO", "karna", "M2007J20CI", "karna_in");
+        set_device_props("POCO", "karna", "M2007J20CI", "karna_in", "POCO X3");
         property_override("ro.product.mod_device", "surya_in_global");
     } else { // POCO X3 NFC
-        set_device_props("POCO", "surya", "M2007J20CG", "surya_global");
+        set_device_props("POCO", "surya", "M2007J20CG", "surya_global", "POCO X3 NFC");
         property_override("ro.product.mod_device", "surya_global");
     }
 
