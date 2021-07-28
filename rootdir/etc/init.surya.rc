@@ -6,6 +6,11 @@ on init
     chown system system /proc/tp_gesture
     chmod 0644 /proc/tp_gesture
 
+on post-fs-data
+    # Smart charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+
 on boot
     wait /sys/class/power_supply/battery/temp
     start mi_thermald
