@@ -10,6 +10,10 @@
         "branch":       "staging/LA.UM.9.x"
     },
     {
+        "repository":   "android_prebuilts_clang_host_linux-x86_clang-r416183b1",
+        "target_path":  "prebuilts/clang/host/linux-x86/clang-r416183b1"
+    },
+    {
         "repository":   "android_vendor_xiaomi_surya",
         "target_path":  "vendor/xiaomi/surya"
     }
