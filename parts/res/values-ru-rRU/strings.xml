@@ -58,4 +58,16 @@
     <string name="dirac_preset_metal">Металл</string>
      <!-- QS tile title -->
     <string name="dirac_qs_tile_title">Dirac звук</string>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Профили оптимизации</string>
+    <string name="thermal_summary">Установите профили температуры для оптимальной производительности приложений</string>
+    <string name="thermal_default">По умолчанию</string>
+    <string name="thermal_benchmark">Бенчмарк</string>
+    <string name="thermal_camera">Камера</string>
+    <string name="thermal_dialer">Звонки</string>
+    <string name="thermal_gaming">Игры</string>
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Очистка динамика</string>
+    <string name="clear_speaker_summary">Воспроизвести 30-и секундный звук для очистки динамика</string>
+    <string name="clear_speaker_description">Включите этот параметр 1-2 раз, если динамик немного загрязнен. Также поставьте звук на максимальную громкость.\n\nЕсли динамик сильно загрязнен, запустите этот параметр 2-5 раз и потрясите телефон. Динамик должен смотреть вниз.\n\nВНИМАНИЕ: Убедитесь, что наушники отключены.</string>
 </resources>
