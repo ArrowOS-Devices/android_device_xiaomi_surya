@@ -23,4 +23,7 @@ allow xiaomiparts_app {
     sysfs_thermal
 }:{ file lnk_file } rw_file_perms;
 
+get_prop(xiaomiparts_app, persist_lcd_prop)
+set_prop(xiaomiparts_app, persist_lcd_prop)
+
 binder_call(xiaomiparts_app, gpuservice)
