@@ -11,20 +11,6 @@ on post-fs-data
     chown system system /sys/class/power_supply/battery/input_suspend
     chmod 0666 /sys/class/power_supply/battery/input_suspend
 
-on boot
-    wait /sys/class/power_supply/battery/temp
-    start mi_thermald
-
-on charger
-    wait /sys/class/power_supply/battery/temp
-    start mi_thermald
-
-service mi_thermald /vendor/bin/mi_thermald
-    class main
-    user root
-    group system
-    seclabel u:r:mi_thermald:s0
-
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
@@ -36,6 +22,11 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
+
+service mi_thermald /vendor/bin/mi_thermald
+    class core
+    user root
+    group system
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override
