@@ -28,6 +28,7 @@ persist.vendor.cp.vbus_offset_mv=1040
 
 # Keystore
 ro.hardware.keystore_desede=true
+ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Media
 vendor.media.target.version=2
