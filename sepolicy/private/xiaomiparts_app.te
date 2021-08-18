@@ -20,6 +20,7 @@ allow xiaomiparts_app system_app_data_file:{ file lnk_file } create_file_perms;
 
 allow xiaomiparts_app {
     cgroup
+    proc_nvt_feature
     sysfs_thermal
 }:{ file lnk_file } rw_file_perms;
 
