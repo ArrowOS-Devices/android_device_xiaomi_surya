@@ -70,4 +70,20 @@
     <string name="clear_speaker_title">Очистка динамика</string>
     <string name="clear_speaker_summary">Воспроизвести 30-и секундный звук для очистки динамика</string>
     <string name="clear_speaker_description">Включите этот параметр 1-2 раз, если динамик немного загрязнен. Также поставьте звук на максимальную громкость.\n\nЕсли динамик сильно загрязнен, запустите этот параметр 2-5 раз и потрясите телефон. Динамик должен смотреть вниз.\n\nВНИМАНИЕ: Убедитесь, что наушники отключены.</string>
+    <!-- LCD Features -->
+    <string name="lcd_features_title">Функции ЖК-дисплея</string>
+    <string name="lcd_features_summary">Режим повышенной яркости, CABC</string>
+    <string name="lcd_hbm_title">Режим повышенной яркости (HBM)</string>
+    <string name="lcd_hbm_tile_title">HBM</string>
+    <string name="lcd_cabc_title">Режим CABC</string>
+    <string name="lcd_features_info">Режим повышенной яркости (HBM) увеличивает максимальную яркость дисплея для улучшения видимости при солнечном свете. Увеличивает энергопотребление.\n\nCABC (автоматическая регулировка яркости в зависимости от контента) регулирует яркость дисплея и подсветки в зависимости от текущего отображаемого контента, чтобы снизить энергопотребление без ухудшения качества изображения.</string>
+    <!-- Touch Control Settings -->
+    <string name="touch_game_mode_title">Включить игровой режим</string>
+    <string name="touch_game_mode_summary">Активируйте ручное управление функциями сенсорного экрана и увеличьте производительность центрального и графического процессора</string>
+    <string name="touch_response_title">Реакция на прикосновение</string>
+    <string name="touch_response_summary">Управление реакцией на прикосновение</string>
+    <string name="touch_sensitivity_title">Чувствительность к прикосновениям</string>
+    <string name="touch_sensitivity_summary">Регулируйте чувствительность прикосновения для повторных касаний</string>
+    <string name="touch_resistant_title">Область, устойчивая к прикосновениям</string>
+    <string name="touch_resistant_summary">Уменьшите чувствительность к прикосновениям вблизи краев, чтобы избежать срабатывания сенсорных элементов управления</string>
 </resources>

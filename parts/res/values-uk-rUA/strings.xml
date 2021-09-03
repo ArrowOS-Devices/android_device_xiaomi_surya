@@ -70,4 +70,20 @@
     <string name="clear_speaker_title">Очищення динаміка</string>
     <string name="clear_speaker_summary">Увімкніть 30-секундний звук, щоб очистити динамік</string>
     <string name="clear_speaker_description">Запустіть цю функцію один або два рази, якщо виявите, що ваш динамік злегка заблокований пилом. Встановіть максимальну гучність медіа.\n\nЯкщо динамік сильно заблокований, запустіть цю функцію 2-5 разів, струшуючи пристрій динаміком вниз.\n\nУВАГА: Переконайтесь, що навушники відключені.</string>
+    <!-- LCD Features -->
+    <string name="lcd_features_title">Функції РК-дисплея</string>
+    <string name="lcd_features_summary">Режим високої яскравості, CABC</string>
+    <string name="lcd_hbm_title">Режим високої яскравості (HBM)</string>
+    <string name="lcd_hbm_tile_title">HBM</string>
+    <string name="lcd_cabc_title">Режим CABC</string>
+    <string name="lcd_features_info">Режим високої яскравості (HBM) збільшує максимальну яскравість дисплея для покращення видимості під сонячним світлом. Збільшує споживання електроенергії.\n\nCABC (автоматичне регулювання яскравості в залежності від контенту) регулює яскравість дисплея та підсвічування відповідно до поточного вмісту, щоб зменшити споживання електроенергії без погіршення.</string>
+    <!-- Touch Control Settings -->
+    <string name="touch_game_mode_title">Увімкнути режим гри</string>
+    <string name="touch_game_mode_summary">Активуйте функції керування сенсорним екраном вручну та збільште продуктивність центрального та графічного процесора</string>
+    <string name="touch_response_title">Реакція на дотик</string>
+    <string name="touch_response_summary">Керуйте реакцією на дотик</string>
+    <string name="touch_sensitivity_title">Чутливість до дотику</string>
+    <string name="touch_sensitivity_summary">Керуйте чутливістю дотику для повторного натискання</string>
+    <string name="touch_resistant_title">Зона, стійка до дотиків</string>
+    <string name="touch_resistant_summary">Зменшіть чутливість до дотиків біля країв, щоб уникнути спрацьовування сенсорних елементів управління</string>
 </resources>
